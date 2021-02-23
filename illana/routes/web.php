@@ -20,3 +20,8 @@ Route::get('/welcome', function () {
 Route::get('/user', function() {
     return "<h1> I am user </h1>";
 });
+
+Route::get('/home', function() {
+    return "home"; 
+});
+
