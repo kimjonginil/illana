@@ -25,3 +25,7 @@ Route::get('/home', function() {
     return "home"; 
 });
 
+Route::get('/web', function() {
+    return "web"; 
+});
+
