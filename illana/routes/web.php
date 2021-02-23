@@ -25,7 +25,7 @@ Route::get('/home', function() {
     return "home"; 
 });
 
-Route::get('/web', function() {
-    return "web"; 
+Route::get('/login', function() {
+    return "login"; 
 });
 
