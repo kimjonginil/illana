@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Models\Post;
+
+use App\Http\Controllers\PostController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -36,9 +40,4 @@ Route::get('/post/create', function () {
     $post->save();
 });
 
-Route::get('/post', function () {
-    $posts = \App\Models\Post::all();
-    foreach ($posts as $post) {
-        echo $post->title.' '.$post->body.'<br>';
-    }
-});
+Route::get('/post', [PostController::class, 'index']);
